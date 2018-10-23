@@ -8,11 +8,11 @@ export class DropdownDirective {
     return this.isOpen;
 
   }
-  @HostListener('click') open() { 
+  @HostListener('click') open() {
     this.isOpen = true;
   }
 
-  @HostListener('mouseleaves') close(){
+  @HostListener('mouseleaves') close() {
     this.isOpen = false;
   }
 
